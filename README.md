@@ -31,3 +31,15 @@ Supports multiple AI models and modalities including text, audio, image, and vid
    ```bash
    git clone https://github.com/yourusername/genai-multimodel-app.git
    cd genai-multimodel-app
+
+
+Streamlit Community Cloud
+Push your code to a GitHub repository.
+
+Connect the repo to Streamlit Cloud.
+
+Add API keys securely under Manage App > Secrets.
+
+Deploy and clear cache/restart app as needed after updates.
+
+Note: Ollama models require local or dedicated servers and are not supported on Streamlit Cloud.
