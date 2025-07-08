@@ -25,9 +25,9 @@ load_dotenv()
 # genai.configure(api_key=os.getenv("GEMINI_API_KEY") or st.secrets.get("GEMINI_API_KEY"))
 # hf_token = os.getenv("HUGGINGFACEHUB_API_TOKEN") or st.secrets.get("HUGGINGFACEHUB_API_TOKEN")
 
-openai_client = OpenAI(api_key= st.secrets.get("OPENAI_API_KEY"))
+openai_client = st.secrets.get("OPENAI_API_KEY")
 genai.configure(api_key=st.secrets.get("GEMINI_API_KEY"))
-hf_token = os.getenv(st.secrets.get("HUGGINGFACEHUB_API_TOKEN"))
+hf_token = st.secrets.get("HUGGINGFACEHUB_API_TOKEN")
 hf_model_name = "mistralai/Mistral-7B-Instruct-v0.1"  
 hf_provider = "auto"  # Use a valid provider string like 'huggingface'
 
